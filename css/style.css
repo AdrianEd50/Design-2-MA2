@@ -1,0 +1,173 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 120px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #2438ec;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background: #2438ec;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+footer img {
+  width: 35px;
+  padding: 5px;
+  float: left;
+}
+
+.icon {
+  width: 15px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.conteiner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: lightgray;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.conteiner h1 {
+  grid-column: -1/1;
+}
+
+.conteiner p {
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+img {
+  width: 100%;
+}
+
+.main-img {
+  background-image: url(../images/bed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 135vh;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.bold {
+  font-style: italic;
+}
+
+button {
+  border-radius: 15px;
+  padding: 10px 30px;
+  margin: 50px;
+  margin-top: 300px;
+  background-color: #f79c3b;
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button a {
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .conteiner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer img {
+    margin-left: 5px;
+  }
+
+  .main-img {
+    background-position: bottom;
+  }
+
+  button {
+    margin: 200px;
+    margin-top: 300px;
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 500) {
+  button {
+    margin: 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  button {
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  button {
+    margin-left: 480px;
+  }
+}
+
+@media (min-width: 1500px) {
+  button {
+    margin-left: 800px;
+  }
+}
